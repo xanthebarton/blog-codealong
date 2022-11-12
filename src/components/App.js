@@ -40,18 +40,6 @@ export default function App() {
         {user && <button onClick={() => setWriting(true)}>New Article</button>}
         {!user ? <SignIn /> : <SignOut />}
       </header>
-      <app>
-      <div>
-        <img
-          src={flower}
-          height="150px"
-          width="150px"
-          alt="flower"
-          class="image"
-        />
-      </div>
-      </app>
-      
       {!user ? "" : <Nav articles={articles} setArticle={setArticle} />}
 
       {!user ? (
@@ -61,7 +49,17 @@ export default function App() {
       ) : (
         <Article article={article} />
       )}
-      
+      <p>
+      <div>
+        <img
+          src={flower}
+          height="150px"
+          width="150px"
+          alt="flower"
+          class="image"
+        />
+      </div>
+      </p>  
     </div>
   )
 }
