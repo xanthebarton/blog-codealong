@@ -51,6 +51,7 @@ export default function App() {
         />
       </div>
       </app>
+      
       {!user ? "" : <Nav articles={articles} setArticle={setArticle} />}
 
       {!user ? (
