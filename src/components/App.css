@@ -85,7 +85,7 @@ button:hover {
   right: 0px;
   padding: 10px;
   margin-right: auto;
-  position: absolute;
+  position: relative;
   object-position: top, right;
   align-items: flex-end;
  }
