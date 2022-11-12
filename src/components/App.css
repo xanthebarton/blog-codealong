@@ -55,6 +55,7 @@ nav p:hover {
 article .date {
   font-style: italic;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10pt;
 }
 
 article .body {
@@ -83,7 +84,7 @@ button:hover {
   height: 250px;
   top: 50px;
   right: 0px;
-  padding: 10px;
+  padding: 8px;
   margin-right: auto;
   position: absolute;
   object-position: top, right;
