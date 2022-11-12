@@ -9,7 +9,7 @@
 header {
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-color: lightpink;
   color: white;
   grid-column: 1 / span 2;
   padding: 10px 5px;
@@ -35,7 +35,7 @@ article {
 }
 
 nav {
-  background-color: #dee9ff;
+  background-color: pink;
 }
 
 nav p:hover {
