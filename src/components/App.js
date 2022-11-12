@@ -5,7 +5,7 @@ import ArticleEntry from "./ArticleEntry"
 import { SignIn, SignOut, useAuthentication } from "../services/authService"
 import { fetchArticles, createArticle } from "../services/articleService"
 import "./App.css"
-import flower from flower.png
+import flower from "./flower.png"
 
 export default function App() {
   const [articles, setArticles] = useState([])
@@ -40,7 +40,17 @@ export default function App() {
         {user && <button onClick={() => setWriting(true)}>New Article</button>}
         {!user ? <SignIn /> : <SignOut />}
       </header>
-
+      <app>
+      <div>
+        <img
+          src={flower}
+          height="150px"
+          width="150px"
+          alt="flower"
+          class="image"
+        />
+      </div>
+      </app>
       {!user ? "" : <Nav articles={articles} setArticle={setArticle} />}
 
       {!user ? (
@@ -50,15 +60,7 @@ export default function App() {
       ) : (
         <Article article={article} />
       )}
-      <div>
-        <img
-          src={flower}
-          height="150px"
-          width="150px"
-          alt="lightbulb"
-          class="image"
-        />
-      </div>
+      
     </div>
   )
 }

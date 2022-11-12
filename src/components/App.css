@@ -78,11 +78,10 @@ button:hover {
 }
 
 .image {
-  width: 215px;
+  width: 250px;
   height: 250px;
-  margin-top: 20%;
-  margin-bottom: 20%;
   margin-right: auto;
   position: relative;
-  object-position: center;
-  transition: transform 2s; }
+  object-position: top, right;
+  align-items: flex-end;
+ }
