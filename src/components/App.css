@@ -4,15 +4,18 @@
   grid-template-columns: 250px auto;
   height: 100vh;
   overflow: scroll;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-image: radial-gradient(white,rgb(245, 214, 219));
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  background-color: lightpink;
+  background-color: palevioletred;
   color: white;
   grid-column: 1 / span 2;
   padding: 10px 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 form {
@@ -20,22 +23,27 @@ form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 form input,
 form textarea {
   margin-bottom: 10px;
   width: 300px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 nav,
 article {
   height: 100%;
   padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav {
   background-color: pink;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 
 nav p:hover {
@@ -45,10 +53,12 @@ nav p:hover {
 
 article .date {
   font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 article .body {
   white-space: break-spaces;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .error {
@@ -56,3 +66,23 @@ article .body {
   color: gold;
   padding: 5px;
 }
+
+button {
+  background-color: rgb(250, 237, 239);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button:hover {
+  background-color: rgb(251, 218, 223);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.image {
+  width: 215px;
+  height: 250px;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  margin-right: auto;
+  position: relative;
+  object-position: center;
+  transition: transform 2s; }
